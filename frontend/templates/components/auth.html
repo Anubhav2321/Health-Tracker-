@@ -1,0 +1,23 @@
+<div id="auth-screen" class="auth-wrapper">
+    <div class="glass auth-box fade-in">
+        <div style="font-size: 3rem; color: var(--primary); margin-bottom: 20px;"><i class="fas fa-fingerprint"></i></div>
+        <h1 class="gradient-title">BioNexus</h1>
+        <input type="text" id="username" placeholder="Enter Access ID" style="text-align: center; font-size: 1.2rem;">
+        <button class="glow-btn" onclick="handleLogin()">AUTHENTICATE</button>
+    </div>
+</div>
+<div id="form-screen" class="auth-wrapper hidden">
+    <div class="glass form-box fade-in">
+        <h2 style="color: var(--primary); margin-bottom: 10px;">Calibration</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left;">
+            <input type="number" id="p-age" placeholder="Age">
+            <select><option>Male</option><option>Female</option></select>
+            <input type="number" id="p-height" placeholder="Height (cm)">
+            <input type="number" id="p-weight" placeholder="Weight (kg)">
+        </div>
+        <div style="margin-top: 15px; text-align: left;">
+            <select id="p-goal"><option>Hypertrophy</option><option>Weight Loss</option></select>
+        </div>
+        <button class="glow-btn" onclick="launchSystem()">INITIALIZE</button>
+    </div>
+</div>

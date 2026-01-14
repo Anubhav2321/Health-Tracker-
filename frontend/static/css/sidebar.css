@@ -1,0 +1,8 @@
+.sidebar { width: 280px; height: 100%; display: flex; flex-direction: column; padding: 30px; background: rgba(0,0,0,0.6); border-right: 1px solid rgba(255,255,255,0.05); z-index: 10; }
+.logo { font-size: 1.8rem; font-weight: 800; margin-bottom: 50px; background: linear-gradient(90deg, #fff, var(--primary)); -webkit-background-clip: text; color: transparent; display: flex; align-items: center; }
+.logo-img { height: 45px; width: 45px; border-radius: 10px; margin-right: 10px; box-shadow: 0 0 15px var(--primary); border: 1px solid rgba(255,255,255,0.2); }
+.nav-item { padding: 15px 20px; margin-bottom: 12px; border-radius: 12px; cursor: pointer; color: #888; display: flex; align-items: center; gap: 15px; font-weight: 500; }
+.nav-item:hover, .nav-item.active { background: rgba(0, 242, 96, 0.1); color: var(--primary); box-shadow: var(--neon-glow); border-left: 3px solid var(--primary); }
+.main { flex: 1; padding: 40px; overflow-y: auto; position: relative; }
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
+.user-avatar { width: 50px; height: 50px; border-radius: 50%; border: 2px solid var(--primary); background-size: cover; cursor: pointer; background-color: rgba(255,255,255,0.1); }

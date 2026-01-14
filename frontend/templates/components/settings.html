@@ -1,0 +1,43 @@
+<div id="view-settings" class="hidden fade-in">
+    <h2 style="margin-bottom: 20px; color: var(--primary);">System Configuration</h2>
+    
+    <div class="glass" style="padding: 30px; border-radius: 15px;">
+        <div class="setting-row">
+            <div>
+                <h4 style="margin-bottom: 5px;"><i class="fas fa-volume-up"></i> Voice Feedback</h4>
+                <p style="color: #888; font-size: 0.9rem;">Enable AI voice responses</p>
+            </div>
+            <label class="switch">
+                <input type="checkbox" checked onchange="toggleSound(this)">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="setting-row" style="margin-top: 20px;">
+            <div>
+                <h4 style="margin-bottom: 5px;"><i class="fas fa-bell"></i> Notifications</h4>
+                <p style="color: #888; font-size: 0.9rem;">Get daily workout reminders</p>
+            </div>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="setting-row" style="margin-top: 20px;">
+            <div>
+                <h4 style="margin-bottom: 5px;"><i class="fas fa-user-secret"></i> Privacy Mode</h4>
+                <p style="color: #888; font-size: 0.9rem;">Hide sensitive health data</p>
+            </div>
+            <label class="switch">
+                <input type="checkbox" id="privacy-toggle" onchange="togglePrivacy()">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+            <h4 style="color: #ff5e62; margin-bottom: 15px;">Danger Zone</h4>
+            <button class="glow-btn" style="background: rgba(255, 94, 98, 0.2); color: #ff5e62; border: 1px solid #ff5e62; box-shadow: none;" onclick="alert('Resetting System...')">RESET ALL DATA</button>
+        </div>
+    </div>
+</div>

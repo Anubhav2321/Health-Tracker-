@@ -1,0 +1,15 @@
+.chat-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(5px); z-index: 100; display: flex; justify-content: center; align-items: center; }
+.chat-hud { width: 800px; height: 600px; background: #0a0a0a; border: 1px solid var(--primary); border-radius: 10px; box-shadow: 0 0 50px rgba(0, 242, 96, 0.2); display: flex; flex-direction: column; overflow: hidden; animation: openHud 0.4s; }
+@keyframes openHud { 0% { transform: scale(0.9); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+.chat-header { padding: 15px 25px; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center; color: var(--primary); letter-spacing: 2px; font-weight: bold; }
+.chat-body { flex: 1; padding: 30px; overflow-y: auto; display: flex; flex-direction: column; gap: 20px; }
+.chat-input-area { padding: 20px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 15px; background: rgba(0,0,0,0.2); }
+.msg { max-width: 80%; padding: 15px 20px; border-radius: 10px; }
+.msg.user { align-self: flex-end; background: var(--secondary); color: #fff; }
+.msg.bot { align-self: flex-start; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #eee; border-left: 3px solid var(--primary); }
+.icon-btn { background: none; border: none; color: var(--primary); font-size: 1.4rem; cursor: pointer; transition: 0.3s; padding: 0 10px; }
+.voice-waves { display: flex; gap: 3px; align-items: center; height: 20px; }
+.wave { width: 3px; height: 100%; background: var(--primary); animation: wave 1s infinite; }
+@keyframes wave { 0%, 100% { height: 20%; } 50% { height: 100%; } }
+.mic-active { color: #ff5e62 !important; animation: pulseRed 1s infinite; }
+@keyframes pulseRed { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }

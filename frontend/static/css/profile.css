@@ -1,0 +1,39 @@
+.profile-card-large { 
+    padding: 40px; 
+    display: flex; align-items: center; gap: 40px; 
+    margin-bottom: 30px; 
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.big-avatar { 
+    width: 150px; height: 150px; 
+    border-radius: 50%; 
+    border: 4px solid var(--primary); 
+    background-size: cover; 
+    background-position: center; 
+    display: flex; justify-content: center; align-items: center; 
+    font-size: 4rem; color: #555; 
+    background-color: rgba(255,255,255,0.05); 
+    cursor: pointer; 
+    position: relative;
+    overflow: hidden; /* Ensures image fits in circle */
+}
+
+/* When image is present, remove background color */
+.big-avatar.has-image { 
+    background-color: transparent !important; 
+    color: transparent !important; /* Hides the icon text */
+}
+
+.info-grid { 
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px; 
+}
+
+.info-box { 
+    background: rgba(0,0,0,0.3); padding: 20px; 
+    border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); 
+}
+
+.info-box small { 
+    color: #888; letter-spacing: 1px; font-size: 0.8rem; text-transform: uppercase; 
+}
