@@ -37,6 +37,10 @@
 
 ---
 
+website access link :- https://health-tracker-1-lidy.onrender.com/
+
+---
+
 ## ✨ Key Features
 
 ### 🍎 AI Food Vision (Powered by Gemini 1.5 Pro)
@@ -46,7 +50,8 @@
 
 ### 🤖 BioNexus Assistant (Powered by Groq / Llama 3)
 - **Context-Aware Chat:** The AI knows your health profile (age, weight, goals) for personalized advice.
-- **Mood Detection & Music:** Detects mood from your text and plays matching background music (Lofi, Workout Bass, Happy, etc.).
+- **Mood Detection & Music:** Detects mood from your text and plays matching background music (Lofi, Workout Bass,
+-  Happy, etc.).
 - **Custom Plans:** Generates 1-Day Diet & Workout protocols instantly.
 
 ### 🎮 Gamification & Missions
